@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Google Sign-in</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<meta name="google-signin-client_id" content="457207311912-4465qsu4cr7vusdk63qtrd1g7363g54b.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="auth.js"></script>
+		<style >
+			.g-signin2{
+				margin-left: 500px;
+				margin-top: 200px;
+			}
+
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="g-signin2"  data-onsuccess="onSignIn" ></div>
+
+	</body>
+</html>

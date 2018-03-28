@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica:300,400,700,900');
+
+* k{
+
+		box-sizing: border-box;
+		transition:all ease-in-out 250ms;
+	}
+body {	
+	margin: 0;
+	font-family: 'Helvetica',sans-serif;
+	
+
+}
+.box {
+    width: 35rem; height:50rem ;
+    border: solid 1px #ccc;
+    position: relative;
+    background: white;
+    margin-left: 40%;
+    margin-right: 45%;
+    text-align: center;
+    margin-top: 10rem;
+
+}
+.box:before, .box:after {
+    min-height: 45%; width: 65%;
+    border-radius: .2em;
+    box-shadow: 0 0 .625em rgba(204,204,204,.4);
+    position: absolute;
+    z-index: -1;
+    background: rgba(204,204,204,.4);
+    content: '';
+}
+.box:before {
+    bottom: 0; left: .3em;
+    transform: rotate(-5deg);
+}
+.box:after {
+    right: .3em; bottom: 0; 
+    transform: rotate(5deg);
+}
