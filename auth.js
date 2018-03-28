@@ -1,11 +1,8 @@
-var btn = document.getElementById('btn');
-
-btn.addEventListener('click', function(){
-	var userRequest =  new XMLHttpRequest() ;
-	userRequest.open('POST',);
-	userRequest.onload = function(){
-		var ourData = JSON.parse(userRequest.responseText);
-		console
-	}
-
-});
+function onSignIn(googleUser)
+{
+	var profile = googleUser.getBasicProfile();
+	$(".g-signin2").css("diaplay", "none");
+	$(".data").css("display","block");
+	$("#pic").attr('src',profile.getImageUrl());
+	$("#email").text(profile.getEmail());
+}
