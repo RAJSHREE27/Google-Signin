@@ -1,8 +1,8 @@
 function onSignIn(googleUser)
 {
 	var profile = googleUser.getBasicProfile();
-	$(".g-signin2").css("display", "none");
-	$(".data").css("display","block");
+	$(".g-signin2").css("display", "none");					//jquery to change display property of google button to none
+	$(".data").css("display","block");							//jquery to change display property of profile details to block
 	$("#pic").attr('src',profile.getImageUrl());
 	$("#email").text(profile.getEmail());
 }
